@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #4285f4;
+    font-weight: bold;
+}
+
+input, button {
+    margin-top: 10px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.board div:hover {
+    background-color: #ddd;
+}

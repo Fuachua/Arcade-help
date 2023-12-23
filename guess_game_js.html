@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game - JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number - JavaScript</h1>
+        <p id="message"></p>
+        <input type="number" id="guess" required>
+        <button onclick="guessNumber()">Adivinar</button>
+
+        <script>
+            var numberToGuess = Math.floor(Math.random() * 10) + 1;
+
+            function guessNumber() {
+                var guess = parseInt(document.getElementById('guess').value);
+                var messageElement = document.getElementById('message');
+
+                if (guess === numberToGuess) {
+                    messageElement.innerHTML = '¡Felicidades! ¡Has adivinado el número!';
+                } else {
+                    messageElement.innerHTML = 'Intenta de nuevo. El número es diferente.';
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
